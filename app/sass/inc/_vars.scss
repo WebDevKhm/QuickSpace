@@ -1,0 +1,26 @@
+$text: #000;
+$main: #3c6;
+
+$bodyfontsize: 16px;
+$bodyfont: sans-serif;
+$containerWidth: 1200px;
+
+@mixin desktop-md {
+	@media (max-width: $containerWidth) { @content; }
+}
+
+@mixin tablet-md {
+	@media (max-width: 1024px) { @content; }
+}
+
+@mixin tablet-sm {
+	@media (max-width: 768px) { @content; }
+}
+
+@mixin mobile-md {
+	@media (max-width: 640px) { @content; }
+}
+
+@mixin mobile-sm {
+	@media (max-width: 480px) { @content; }
+}
